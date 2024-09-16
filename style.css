@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: cornflowerblue;
+}
+.container{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%;
+    border-radius: 30px;
+    background-color: tan;
+    height: 300px;
+    width: 450px;
+    padding: 20px 20px 20px 20px;
+
+}
+.toDo{
+    display: block;
+    text-align: left;
+    background-color:tan;
+}
+.icon_task{
+    background-color:tan;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top :25px;
+    left: 155px;
+
+}
+.main_input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    color: gray;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: bisque;
+    text-align:center;
+}
+.add_button{
+    height: 40px;
+    width: 80px;
+    color:#fff ;
+    background-color: chocolate;
+    border: none;
+    border-radius: 50px;
+
+}
+.inactive{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-top: 10px;
+
+}
+.inactive::before{
+    content: '';
+    display: block;
+    cursor: pointer;
+    position:absolute;
+    top: 1;
+    width: 30px;  
+    height: 30px;  
+    background-image: url("/img/unchecked.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+}
+
+.inactive::after{
+    content: '';
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    top: 25%;
+    left: 350px;
+    width: 30px;   
+    height: 30px;  
+    background-image: url("/img/crossafter.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}
+.active{
+    text-decoration: line-through;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-top: 10px;
+
+}
+.active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: url(/img/checked.png);
+    top: 1;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.active::after{
+    content: '';
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    top: 25%;
+    left: 350px;
+    width: 30px;   
+    height: 30px;  
+    background-image: url("/img/crossafter.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}
